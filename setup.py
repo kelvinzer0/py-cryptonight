@@ -48,7 +48,7 @@ if os.name == 'nt':
     compile_args = []  # AzeS: Maybe some cl.exe args that would be interesting?
 else:
     compile_args = [
-        '-std=c++11' if not no_gnu else '-std=c++11',
+        '-std=c++17' if not no_gnu else '-std=c++17',
         '-maes' if not no_aes else None,
         '-fpermissive',
     ]
