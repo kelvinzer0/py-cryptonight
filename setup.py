@@ -127,6 +127,7 @@ hash_module = Extension('_pycryptonight',
                         extra_compile_args=[x for x in compile_args if x],
                         extra_objects=extra_objects,
                         libraries=libs,
+                        extra_compile_args=['-std=c++11']
                         # For testing only - some of these are GCC-specific
                         # '-Wall',
                         # '-Wextra',
