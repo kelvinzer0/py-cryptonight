@@ -521,7 +521,7 @@ void CryptonightR_instruction_mov256(void);
 // extern const void* instructions[257];
 // extern const void* instructions_mov[257];
 
-inline const void* instructions[257] = {
+const void* instructions[257] = {
 	CryptonightR_instruction0,
 	CryptonightR_instruction1,
 	CryptonightR_instruction2,
@@ -781,7 +781,7 @@ inline const void* instructions[257] = {
 	CryptonightR_instruction256,
 };
 
-inline const void* instructions_mov[257] = {
+const void* instructions_mov[257] = {
 	CryptonightR_instruction_mov0,
 	CryptonightR_instruction_mov1,
 	CryptonightR_instruction_mov2,
