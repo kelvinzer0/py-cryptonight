@@ -124,10 +124,9 @@ hash_module = Extension('_pycryptonight',
                         ] + (randomx_files if do_rndx else []),
                         include_dirs=include_dirs,
                         define_macros=[x for x in define_macros if x],
-                        extra_compile_args=[x for x in compile_args if x],
+                        extra_compile_args=[x for x in compile_args if x,'-std=c++11'],
                         extra_objects=extra_objects,
-                        libraries=libs,
-                        extra_compile_args=['-std=c++11']
+                        libraries=libs
                         # For testing only - some of these are GCC-specific
                         # '-Wall',
                         # '-Wextra',
